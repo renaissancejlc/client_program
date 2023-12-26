@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav, Modal, Button, Form } from 'react-bootstrap';
+import { Navbar, Nav, Modal, Button} from 'react-bootstrap';
 import { Calendar, momentLocalizer } from 'react-big-calendar';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 import moment from 'moment';
@@ -30,26 +30,6 @@ const HomeTab = ({ events, handleShow, handleClose, handleInputChange, handleDat
   </div>
 );
 
-const ClientsTab = () => (
-  <div className="container mt-4">
-    {/* Render components for the Clients tab */}
-    <h1>Clients</h1>
-  </div>
-);
-
-const MessageTab = () => (
-  <div className="container mt-4">
-    {/* Render components for the Send a Message tab */}
-    <h1>Send a Message</h1>
-  </div>
-);
-
-const BillingTab = () => (
-  <div className="container mt-4">
-    {/* Render components for the Billing tab */}
-    <h1>Billing</h1>
-  </div>
-);
 
 const App = () => {
   const [currentTab, setCurrentTab] = useState('home'); // Default tab is 'home'

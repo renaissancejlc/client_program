@@ -1,6 +1,6 @@
 // Clients.js
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
 import ClientDetailModal from './ClientDetailModal'; // Import the new component
 
 const Clients = () => {
@@ -57,11 +57,6 @@ const Clients = () => {
       updatedClients.splice(index, 1);
       setClients(updatedClients);
     }
-  };
-
-  const updateClientDetails = (clientId, details) => {
-    // Your logic to update client details goes here
-    console.log(`Updating details for client with id ${clientId}:`, details);
   };
   const handleClientClick = (client) => {
     setSelectedClient(client);
